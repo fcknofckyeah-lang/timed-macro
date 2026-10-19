@@ -1,0 +1,31 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.208",
+		"android32": "2.208",
+		"android64": "2.208",
+		"mac": "2.208",
+		"ios": "2.208"
+	},
+	"id": "yourname.timed-macro",
+	"name": "Timed Macro",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Load a .gdr/.gdr2 macro. Each macro jump has a timer window: click inside it and the macro performs the jump for you.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"description": "Turn the timed macro assist on or off.",
+			"default": true
+		},
+		"window-seconds": {
+			"type": "float",
+			"name": "Click window (seconds)",
+			"description": "How long before each macro jump you are allowed to click to trigger it.",
+			"default": 2.0,
+			"min": 0.1,
+			"max": 10.0
+		}
+	}
+}
